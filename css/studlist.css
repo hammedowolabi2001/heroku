@@ -1,0 +1,37 @@
+#head{
+    width: 100%;
+    height: 50px;
+    background-color: green;
+    padding-left: 100px;
+   
+}
+title{
+    width: 100%;
+    height: 70px;
+}
+.modrosaName{
+    font-size:35px;
+    color:goldenrod;
+    font-weight: bolder;
+    
+
+}
+.tabs{
+    margin-right: 70px;
+    font-size: 27px;
+    color:goldenrod ;
+    cursor: pointer;
+    
+}
+a{
+    text-decoration: none;
+}
+#table{
+    color: rgb(78, 68, 12);
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+.container{
+    margin-top: 40px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        #anim{
+            display: grid;
+            grid-template-columns: 60% 40%;
+            height: 300px;
+        }
+        .animation{
+            background-repeat: no-repeat;
+            animation-name: animate;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animate {
+            0%{background-image: url(img/modrosa.jpg);}
+            50%{background-image: url(img/whiteMsq.jpg);}
+            90%{background-image: url(img/modrosa-studs.jpg);}
+        }
+
+    
+
+        @media screen and (max-width:520px){
+            #anim{
+                height: 200px;
+                grid-template-columns: 50% 40%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="head_bar" class="bg-success">
+        <center>
+            <div id="title">
+                <span class="name"> مدرسة خير الأدب للدراسات العربية والإسلامية</span>
+            </div>
+        </center>
+        
+       <div class="head" id="head">
+           <a href=""><span id="home" class="tabs">Home</span></a> 
+            <a href="login.php"><span id="students" class="tabs">Students</a></span></a>
+            <a href="staff.php"><span id="staff" class="tabs">Staff</a></span></a>
+            <span id="contacts" class="tabs">Contacts</a></span>
+            <a href="stud_list.php"><span class="tabs">StudentsList</span></a>
+       
+       </div>
+
+       <div id="anim">
+            <div class="animation">
+
+            </div>
+            <div class="sheik">
+                <center><span class="name2">تحت المدير <br>ضيلة الشيخ تاج الدين الأدبي</span></center><br>
+                <center><span class="name2">حفظه الله ورعاه</span></center>
+            </div>
+       </div>
+       <br>
+       <center><span class="name2">KHAYRUL ADAB <br> SCHOOL OF ARABIC AND ISLAMIC STUDIES</span></center>
+       <a href="login.php"><button class="btn btn-success" id="login-btn">student login</button></a>
+    </div>
+
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
